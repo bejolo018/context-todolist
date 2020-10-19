@@ -1,10 +1,15 @@
 import React from 'react';
+import TaskList from './Components/TaskList'
+import TaskListContextProvider from './Context/TaskListContext'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <TaskListContextProvider>
+      <div className="App">
+        <TaskList />
+      </div>
+    </TaskListContextProvider>
+
   );
 }
 
